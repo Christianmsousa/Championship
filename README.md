@@ -1,10 +1,10 @@
 # Projeto feito com Html e Css puro [Championship].
 
-No projeto temos página de:
+### No projeto temos página de:
 * Login
 * Cadastro
 
-Icons:
+### Icons:
 * [Font Awesome](https://fontawesome.com/) 
 
 Projeto no Figman:
