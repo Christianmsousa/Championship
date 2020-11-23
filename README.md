@@ -11,8 +11,8 @@ Projeto no Figman:
 * [Championship](https://www.figma.com/file/Tq9NvpD1VR9xmTjmZoZJNP/ProjetoUsf?node-id=0%3A1)
 ## Imagens
 
-![alt text](https://github.com/Christianmsousa/Championship/Project-img/Cadastro.png)
-![alt text](https://github.com/Christianmsousa/Championship/Project-img/index.png)
+![alt text](https://github.com/Christianmsousa/Championship/blob/main/Project-img/Cadastro.png)
+![alt text](https://github.com/Christianmsousa/Championship/blob/main/Project-img/index.png)
 
 ## Social
 
