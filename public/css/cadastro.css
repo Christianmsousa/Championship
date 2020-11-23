@@ -1,0 +1,387 @@
+/* 
+
+Author: Christian Marçal
+
+Github: https://github.com/Christianmsousa
+LinkedIn: https://www.linkedin.com/in/christiansousaa/
+Figman: https://www.figma.com/file/Tq9NvpD1VR9xmTjmZoZJNP/ProjetoUsf?node-id=0%3A1
+Discord: Swapp#0337
+
+Version: 1.0
+Universidade Sâo Fracisco
+
+*/
+/* #page-home{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+} */
+#container{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows:  30vh 60vh 5vh;
+  grid-template-areas: "h h"
+                       "m m"
+                       "f f"
+  ;
+}
+
+
+header{
+  grid-area: h;
+  /* background: blue; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+header img{
+  width: 20rem;
+}
+/* Form */
+
+main{
+  grid-area: m;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+form h1{
+  color: var(--grey);
+  margin-bottom: 2rem;
+}
+form{
+  background: var(--secundary);
+  padding: 4rem 3rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -3px 4px 4px rgba(0, 0, 0, 0.25), 3px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+/* User */
+
+.user{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.user .fa-user{
+  color: white;
+  position: absolute;
+  margin-left: 1.2rem;
+  font-size: 1.1rem;
+}
+.user input{
+  background-color: var(--primary);
+  border: 0;
+  padding-left: 3rem;
+  width:  23rem;
+  font-size: 1.5rem;
+  height: 3rem;
+  color: white;
+  font-weight: 400;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  transition: 800ms;
+}
+
+.user input:hover{
+  border-bottom: 1px solid var(--grey);
+}
+.user input:focus{
+  outline: none;
+}
+
+/* Email */
+
+.mail{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.mail .fa-envelope{
+  color: white;
+  position: absolute;
+  margin-left: 1.2rem;
+  font-size: 1.1rem;
+}
+.mail input{
+  background-color: var(--primary);
+  border: 0;
+  padding-left: 3rem;
+  width:  23rem;
+  font-size: 1.5rem;
+  height: 3rem;
+  color: white;
+  font-weight: 400;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  transition: 800ms;
+}
+
+.mail input:hover{
+  border-bottom: 1px solid var(--grey);
+}
+.mail input:focus{
+  outline: none;
+}
+
+
+/* Senha */
+
+
+.senha{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.senha .fa-lock{
+  color: white;
+  position: absolute;
+  margin-left: 1.2rem;
+  font-size: 1.1rem;
+}
+.senha input{
+  background-color: var(--primary);
+  border: 0;
+  padding-left: 3rem;
+  width:  23rem;
+  font-size: 1.5rem;
+  height: 3rem;
+  color: white;
+  font-weight: 400;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  transition: 800ms;
+}
+
+.senha input:hover{
+  border-bottom: 1px solid var(--grey);
+}
+.senha input:focus{
+  outline: none;
+}
+
+
+.botao-cad{
+  display: flex;
+  justify-content: center;
+}
+.botao-cad button{
+  margin-top: 1.6rem;
+  background-color: var(--red);
+  width: 23rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.6;
+  color: white;
+
+}
+.botao-cad button:hover{
+  color: var(--hover);
+}
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.login a{
+  color: white;
+  font-size: 1.2rem;
+}
+.login a:hover{
+  color: var(--red);
+}
+/* Icon */
+footer{
+  grid-area: f;
+}
+footer img{
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  width: 3.5rem;
+}
+
+
+
+/* Responsividade */
+
+@media (min-width: 425px){
+  header img{
+    width: 24rem;
+  }
+}
+
+@media (min-width: 768px){
+  #container{
+    grid-template-rows:  20vh 70vh 5vh;
+  }
+  header img{
+    width: 30rem;
+  }
+  form h1{
+    font-size: 2.3rem;
+  }
+  .user input{
+    width: 36rem;
+    height: 5rem;
+    font-size: 1.7rem;
+    padding-left: 4.7rem;
+  }
+  .user .fa-user{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  /* Email */
+  .mail input{
+    width: 36rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    padding-left: 4.7rem;
+  }
+  .mail .fa-envelope{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }  
+
+  /* Senha */
+  .senha input{
+    width: 36rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    padding-left: 4.7rem;
+  }
+  .senha .fa-lock{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  
+  .botao-cad button{
+    width: 36rem;
+    height: 4rem;
+    font-size: 1.7rem;
+  }
+  .login a{
+    font-size: 1.6rem;
+  }
+}
+
+
+
+@media (min-width: 1280px){
+  #container{
+    grid-template-rows:  20vh 70vh 10vh;
+  }
+  header img{
+    width: 30rem;
+  }
+  form h1{
+    font-size: 2.3rem;
+  }
+  .user input{
+    width: 36rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+    padding-left: 4.7rem;
+  }
+  .user .fa-user{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  /* Email */
+  .mail input{
+    width: 36rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+    padding-left: 4.7rem;
+  }
+  .mail .fa-envelope{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }  
+
+  /* Senha */
+  .senha input{
+    width: 36rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+    padding-left: 4.7rem;
+  }
+  .senha .fa-lock{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  
+  .botao-cad button{
+    width: 36rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+  }
+  .login a{
+    font-size: 1.6rem;
+  }
+}
+
+
+
+@media (min-width: 1440px){
+  #container{
+    grid-template-rows:  20vh 70vh 10vh;
+  }
+  header img{
+    width: 30rem;
+  }
+  form h1{
+    font-size: 2.3rem;
+  }
+  .user input{
+    width: 36rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+    padding-left: 4.7rem;
+  }
+  .user .fa-user{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  /* Email */
+  .mail input{
+    width: 36rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+    padding-left: 4.7rem;
+  }
+  .mail .fa-envelope{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }  
+
+  /* Senha */
+  .senha input{
+    width: 36rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+    padding-left: 4.7rem;
+  }
+  .senha .fa-lock{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  
+  .botao-cad button{
+    width: 36rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+  }
+  .login a{
+    font-size: 1.6rem;
+  }
+}

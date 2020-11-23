@@ -1,0 +1,46 @@
+/* 
+
+Author: Christian Marçal
+
+Github: https://github.com/Christianmsousa
+LinkedIn: https://www.linkedin.com/in/christiansousaa/
+Figman: https://www.figma.com/file/Tq9NvpD1VR9xmTjmZoZJNP/ProjetoUsf?node-id=0%3A1
+Discord: Swapp#0337
+
+Version: 1.0
+Universidade Sâo Fracisco
+
+
+*/
+
+:root {
+  --red: #AD0B00;
+  --hover: #c41104;
+  --primary: #121214;
+  --secundary: #202024;
+  --grey:#9A9A9A;
+  --discord: #6E85D3;
+  --discord-h: #748ddf;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, input, button, textarea{
+  font-weight: 400;
+  line-height: 1;
+  font-family: 'Ubuntu', sans-serif;
+}
+a{
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background: var(--primary);
+}
